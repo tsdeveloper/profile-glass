@@ -6,7 +6,7 @@ RESET CSS
 * {
     margin: 0;   
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 /*
@@ -18,20 +18,3 @@ BACKGROUND .PRINCIPAL
     min-height: 100vh; 
 }
 
-.box-sizing-sample-1 {
-    width: 300px;
-    height: 200px;
-    border: 20px solid #000;
-    padding: 10px;
-    margin: 30px;
-    box-sizing: border-box;
-}
-
-
-// .box-sizing-sample-2 {
-//     width: 300px;
-//     height: 100px;
-//     padding: 0;
-//     background: #888;
-
-// }
