@@ -10,7 +10,7 @@ RESET CSS
 */
 
 * {
-    margin: 0;   
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -20,8 +20,8 @@ BACKGROUND .PRINCIPAL
 */
 
 .principal {
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb );
-    min-height: 100vh; 
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,12 +29,39 @@ BACKGROUND .PRINCIPAL
 
 .glass {
     background: white;
-    min-height:  80vh;
+    min-height: 80vh;
     width: 60%;
-    background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.7), 
-        rgba(255, 255, 255, 0.3), 
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3),
         );
+    border-radius: 2.5rem;
+    z-index: 0;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    height: 20rem;
+    width: 20rem;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.9),
+            rgba(206, 152, 152, 0.1),
+        );
+    position: absolute;
     
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+    background: red;
+    z-index: 1;
+}
+
+.circle2 {
+    top: 5%;
+    right: 15%;
+    background: blue;
+    z-index: 2;
 }
