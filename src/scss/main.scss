@@ -28,15 +28,17 @@ BACKGROUND .PRINCIPAL
 }
 
 .glass {
-    background: white;
-    min-height: 80vh;
     width: 60%;
+    background: white;
+    min-height: 80vh;   
     background: linear-gradient(to right bottom,
             rgba(255, 255, 255, 0.7),
             rgba(255, 255, 255, 0.3),
         );
     border-radius: 2.5rem;
-    z-index: 0;
+    z-index: 2;
+    backdrop-filter: blur(2rem)
+
 }
 
 .circle1,
@@ -45,23 +47,20 @@ BACKGROUND .PRINCIPAL
     height: 20rem;
     width: 20rem;
     background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.9),
-            rgba(206, 152, 152, 0.1),
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.3),
         );
     position: absolute;
-    
+    border-radius: 50%;
 }
 
 .circle1 {
     top: 5%;
     right: 15%;
-    background: red;
-    z-index: 1;
+   
 }
 
 .circle2 {
-    top: 5%;
-    right: 15%;
-    background: blue;
-    z-index: 2;
+    bottom: 5%;
+    left: 10%;
 }
