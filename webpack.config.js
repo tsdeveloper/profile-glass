@@ -42,6 +42,31 @@ module.exports = {
                 test: /\.(scss|css)$/,
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
             },
+            // {
+            //     test: /\.(jpe?g|png|gif|svg)$/i, 
+            //     loader: 'file-loader',
+            //     options: {
+            //       name: '/images/[name].[ext]'
+            //     }
+            // }
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+              },
+            //   {
+            //     test: /\.(png|jpe?g|gif|svg)$/i,
+            //     use: [
+            //       {
+            //         loader: 'file-loader',
+            //         options: {
+            //           name: '[name].[hash].[ext]',
+            //           publicPath: 'src/images',
+            //           outputPath: 'images',
+            //           esModule: false
+            //         }
+            //       }
+            //     ]
+            //   }
         ],
     },
 }
