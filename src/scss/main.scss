@@ -30,15 +30,15 @@ BACKGROUND .PRINCIPAL
 .glass {
     width: 60%;
     background: white;
-    min-height: 80vh;   
+    min-height: 80vh;
     background: linear-gradient(to right bottom,
             rgba(255, 255, 255, 0.7),
             rgba(255, 255, 255, 0.3),
         );
     border-radius: 2.5rem;
     z-index: 2;
-    backdrop-filter: blur(2rem)
-
+    backdrop-filter: blur(2rem);
+    display: flex;
 }
 
 .circle1,
@@ -57,10 +57,28 @@ BACKGROUND .PRINCIPAL
 .circle1 {
     top: 5%;
     right: 15%;
-   
+
 }
 
 .circle2 {
     bottom: 5%;
     left: 10%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3),
+        );
+    border-radius: 2rem;
+}
+
+.games {
+    flex: 2;
 }
